@@ -27,3 +27,5 @@ GET HTTPS FQDN
 Query
     ${value}=    nsquery    ${fqdn}
     RETURN       ${value}
+
+
