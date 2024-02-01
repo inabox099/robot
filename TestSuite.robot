@@ -23,6 +23,7 @@ GET HTTPS FQDN
     Status Should Be     200
 
 
+
 *** Keywords ***
 Query
     ${value}=    nsquery    ${fqdn}

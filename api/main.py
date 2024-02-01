@@ -38,7 +38,7 @@ def validate_credentials(credentials: HTTPBasicCredentials = Depends(security)):
 
 
 @app.get("/greet/{name}")
-async def greet(name: str):
+async def greet(name: str) -> dict[str, str]:
     return {'message': f"Hello {name}"}
 
 @app.get("/random",
